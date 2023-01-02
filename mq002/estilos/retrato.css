@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*configurações celulares em pe*/
+
+body{
+    background-image: url(../estilos/imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-color:  #233eff;
+}
