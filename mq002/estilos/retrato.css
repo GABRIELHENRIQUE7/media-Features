@@ -3,6 +3,6 @@
 
 body{
     background-image: url(../estilos/imagens/cev-portrait.jpg);
-    background-size: contain;
-    background-color:  #233eff;
+    background-position: center bottom;
+    background-color: #233EFF;
 }

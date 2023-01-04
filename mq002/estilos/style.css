@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*configurações gerais*/
 
 *{
@@ -8,15 +9,15 @@
 }
 
 html, body{
+    width: 100vw;
     height: 100vh;
-    width: 100vh;
-    background-color: #233eff;
-    background-size: cover;
+    background-color: #233EFF;
+    background-size: contain;
     background: no-repeat;
 }
 
 h1{
     color: white;
-    text-shadow: 2px 2px 0px #1c30c4;
+    text-shadow: 3px 3px 0px #2635ac;
     padding: 10px;
 }
