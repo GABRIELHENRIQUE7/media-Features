@@ -6,48 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media features</title>
     <link rel="stylesheet" href="estilos/style.css">
-     
-     <style>
-       /*Declarações gerais*/
+    <style>
+        /*Declarações gerais*/
  
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    html, body{
-        width: 100vw;
-         height: 100vh;
-         background-color: #233EFF;
-         background-size: contain;
-         background: no-repeat;
-    }
-    
-    h1{
-         color: white;
-         text-shadow: 3px 3px 0px #2635ac;
-         padding: 10px;
-    }
- 
- /*Declarações retrato*/
-    @media screen and (orientation: portrait) {
- body{
-    background-image: url(../estilos/imagens/cev-portrait.jpg);
-    background-position: center bottom;
-    background-color: #233EFF;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+     height: 100vh;
+     background-color: #233EFF;
+     background-size: contain;
+     background: no-repeat;
+}
+
+h1{
+     color: white;
+     text-shadow: 3px 3px 0px #2635ac;
+     padding: 10px;
+}
+
+/*Declarações retrato*/
+     @media screen and (min-width:568px) {
+   body{
+     background-image: url(../estilos/imagens/cev-portrait.jpg);
+     background-position: right bottom;
+     background-color: #233EFF;
  }
-   }
-  /*Declarações paisagem*/
-     @media screen and ((orientation:landscape)) {
-  body{
+ }
+          /*Declarações paisagem*/
+     @media screen and (max-width:2150px) {
+   body{
     background-image: url(imagens/cev-landscape.jpg);
     background-color: #233EFF;
     background-position: left bottom;
 }
-  }
-     </style> 
-
+}
+    </style>
 </head>
 <body>
      <h1>Mude a orientação do seu celular</h1>
