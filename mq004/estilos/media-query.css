@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Todas as demais medias*/
+
+/*Typical device breakepoints
+---------------------------------------------
+Pequenas tela:
+Celular: até 600px até 766px
+Tablet:  até 768px até 992px
+Desktop: 992px até 1200px
+
+Grande telas: acima de 1200px
+*/
+
+
+@media print {   /*inpressão*/
+    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body{
+          background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+          text-shadow: none;
+          color: black;
+       }
+
+       main h1{
+         text-shadow: none;
+         color: black;
+       }
+
+       main{
+        border: 2px solid black;
+       }
+
+       main::after{
+        content: 'Esse site foi feito através do site www.cursoemvideo.com';
+        text-decoration: overline;
+       }
+       
+       img#phone {display: none;}
+       img#tablet {display: none;}
+       img#inpressora {display: block;}
+       img#pc { display: none;}
+       img#tv {display: none;}
+
+
+         
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  /*Tablet*/
+     body{
+        background-image: url(../imagens/back-tablet.jpg);
+     }
+
+     img#phone {display: none;}
+     img#tablet {display: block;}
+     img#inpressora {display: none;}
+     img#pc { display: none;}
+     img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){  /*Desktop*/
+       body{
+        background-image: url(../imagens/back-pc.jpg);
+       }
+       img#phone {display: none;}
+       img#tablet {display: none;}
+       img#inpressora {display: none;}
+       img#pc { display: block;}
+       img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 1200px) {   /*Grandes telas*/
+       body{
+        background-image: url(../imagens/back-tv.jpg);
+       }
+
+       main{
+        width: 700px;
+       }
+
+       img#phone {display: none;}
+       img#tablet {display: none;}
+       img#inpressora {display: none;}
+       img#pc { display: none;}
+       img#tv {display: block;}
+}
